@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background: url("https://cdn.imgchest.com/files/my8xckprw4l.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: start;
+    color: purple;
+    margin-right: 135px;
+}
+
+.container>div {
+    font-size: 10rem;
+    border: 2px dotted purple;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 200px;
+}
+
+.box1 {
+    flex-basis: 1400px;
+    max-width: 1400px;
+    margin-top: -1.0px;
+    margin-left: -0.4px;
+}
+
+.box2 {
+    flex-basis: 177px;
+    max-width: 177px;
+    margin-top: -5.0px;
+
+}
+
+.box3 {
+    flex-basis: 350px;
+}
+
+.box4 {
+    flex-basis: 350px;
+}
+
+.box5 {
+    flex-basis: 1153px;
+}
+
+.box6 {
+    flex-basis: 200px;
+}
+
+.container>div {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
