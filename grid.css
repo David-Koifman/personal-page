@@ -15,7 +15,7 @@ body {
 .container {
   display: grid;
 
-  grid-template-rows: 112px 66px 49px 438px 154px 1130px 113px 219px;
+  grid-template-rows: 112px 66px 49px 438px 154px 1130px;
   grid-template-columns: 212px 452px 578px;
 
   grid-template-areas:
