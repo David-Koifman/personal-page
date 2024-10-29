@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -61,4 +63,52 @@ body {
 
 .box8 {
   grid-area: eight;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2c363e;
+  color: #ffffff;
+  font-size: 13px;
+  max-width: 100%;
+  min-height: 100%;
+  margin-top: -36px;
+}
+
+ul li {
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.catalog {
+  flex-basis: 100px;
+}
+.salon {
+  flex-basis: 120px;
+}
+.stock {
+  flex-basis: 80px;
+}
+.development {
+  flex-basis: 150px;
+}
+.about {
+  flex-basis: 130px;
+}
+.guarantee {
+  flex-basis: 110px;
+}
+.delivery {
+  flex-basis: 90px;
+}
+.jobs {
+  flex-basis: 80px;
+}
+.credit {
+  flex-basis: 140px;
 }
