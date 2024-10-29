@@ -88,9 +88,9 @@ ul li {
 .catalog {
   background-color: #ff4b4b;
   color: #ffffff;
-  padding: 22px 18px;
-  font-size: 15px;
-  flex-basis: 110px;
+  flex-basis: 100px;
+  padding-top: 10px;
+  padding-bottom: 35px;
 }
 
 .salon {
