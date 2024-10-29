@@ -86,8 +86,13 @@ ul li {
 }
 
 .catalog {
-  flex-basis: 100px;
+  background-color: #ff4b4b;
+  color: #ffffff;
+  padding: 22px 18px;
+  font-size: 15px;
+  flex-basis: 110px;
 }
+
 .salon {
   flex-basis: 120px;
 }
