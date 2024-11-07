@@ -96,9 +96,9 @@ ul li {
 
 .catalog {
   color: #db1a1acf;
-  flex-basis: 101px;
+  flex-basis: 104px;
   padding-top: 4px;
-  padding-left: 15px;
+  padding-left: 18px;
 }
 
 .salon {
@@ -111,11 +111,11 @@ ul li {
 }
 
 .development {
-  flex-basis: 150px;
+  flex-basis: 149px;
 }
 
 .about {
-  flex-basis: 158px;
+  flex-basis: 159px;
 }
 
 .guarantee {
