@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="grid3.css" class="style" />
   </head>
   <body>
+    <button
+      onclick="switchStyle()"
+      style="position: absolute; top: 0; right: 0"
+    >
+      Style
+    </button>
     <img
       src="https://cdn.imgchest.com/files/k739c6d6q7q.png"
       style="position: absolute; top: 0; left: 0; z-index: -1"
@@ -34,5 +40,15 @@
       <div class="box7">7</div>
       <div class="box8">8</div>
     </div>
+    <script>
+      function switchStyle() {
+        let style = document.querySelector(".style");
+        if (style.getAttribute("href") === "") {
+          style.setAttribute("href", "grid3.css");
+        } else {
+          style.setAttribute("href", "");
+        }
+      }
+    </script>
   </body>
 </html>
