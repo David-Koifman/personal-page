@@ -19,16 +19,18 @@ body {
 .container {
   display: grid;
   grid-template-rows:
-    minmax(112px, auto) minmax(66px, auto) minmax(49px, auto) minmax(
-      438px,
-      auto
-    )
-    minmax(154px, auto) minmax(1130px, auto);
+    minmax(112px, auto)
+    minmax(200px, auto)
+    minmax(49px, auto)
+    minmax(438px, auto)
+    minmax(154px, auto)
+    minmax(1130px, auto);
 
-  grid-template-columns: minmax(1px, 212px) minmax(2px, 452px) minmax(
-      4px,
-      578px
-    );
+  grid-template-columns:
+    minmax(1px, 212px)
+    minmax(2px, 452px)
+    minmax(4px, 578px);
+
   grid-template-areas:
     "one seven eight"
     "two two two"
@@ -48,6 +50,10 @@ body {
 
 .box2 {
   grid-area: two;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .box3 {
@@ -79,9 +85,8 @@ ul {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   color: #ec0606;
   font-size: 16px;
   font-weight: bold;
@@ -97,42 +102,33 @@ ul li {
 
 .catalog {
   color: #db1a1acf;
-  flex-basis: 104px;
   padding-top: 4px;
   padding-left: 18px;
 }
 
 .salon {
-  flex-basis: 165px;
   padding-left: 12px;
 }
 
 .stock {
-  flex-basis: 83px;
 }
 
 .development {
-  flex-basis: 149px;
 }
 
 .about {
-  flex-basis: 159px;
 }
 
 .guarantee {
-  flex-basis: 119px;
 }
 
 .delivery {
-  flex-basis: 102px;
 }
 
 .jobs {
-  flex-basis: 75px;
 }
 
 .credit {
-  flex-basis: 140px;
 }
 
 img:nth-of-type(1) {
