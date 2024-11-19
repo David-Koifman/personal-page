@@ -11,7 +11,8 @@ body {
   max-width: 1500;
   min-height: 1583px;
   font-size: 2rem;
-  opacity: 0.5;
+  background-image: none;
+  opacity: 1;
   color: blue;
 }
 
@@ -132,6 +133,10 @@ ul li {
 
 .credit {
   flex-basis: 140px;
+}
+
+img:nth-of-type(1) {
+  display: none;
 }
 
 @media (max-width: 500px) {
