@@ -16,20 +16,21 @@ body {
   color: rgb(0, 0, 225);
 }
 
-
 .container {
   display: grid;
   grid-template-rows:
-    minmax(112px, auto) minmax(66px, auto) minmax(49px, auto) minmax(
-      438px,
-      auto
-    )
-    minmax(154px, auto) minmax(1130px, auto);
+    minmax(112px, auto)
+    minmax(66px, auto)
+    minmax(49px, auto)
+    minmax(438px, auto)
+    minmax(154px, auto)
+    minmax(1130px, auto);
 
-  grid-template-columns: minmax(1px, 212px) minmax(2px, 452px) minmax(
-      4px,
-      578px
-    );
+  grid-template-columns:
+    minmax(1px, 300px)
+    minmax(2px, 452px)
+    minmax(4px, 578px);
+
   grid-template-areas:
     "one seven eight"
     "two two two"
@@ -45,6 +46,8 @@ body {
 
 .box1 {
   grid-area: one;
+  background-image: url("https://www.myphone.kg/static/user/ima/logo.png");
+  background-size: cover;
 }
 
 .box2 {
