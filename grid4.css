@@ -76,10 +76,6 @@ body {
   grid-area: seven;
 }
 
-.box8 {
-  grid-area: eight;
-}
-
 ul {
   list-style-type: none;
   display: flex;
@@ -143,7 +139,6 @@ img:nth-of-type(1) {
       "four"
       "five"
       "six"
-      "seven"
-      "eight";
+      "seven";
   }
 }
