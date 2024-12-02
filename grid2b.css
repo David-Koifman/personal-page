@@ -1,53 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 11</title>
-    <link rel="stylesheet" href="grid4.css" class="style" />
-  </head>
-  <body>
-    <button
-      onclick="switchStyle()"
-      style="position: absolute; top: 0; right: 0"
-    >
-      Style
-    </button>
-    <img
-      src="https://cdn.imgchest.com/files/k739c6d6q7q.png"
-      style="position: absolute; top: 0; left: 0; z-index: -1"
-    />
-    <div class="container">
-      <div class="box1">1</div>
-      <div class="box2">
-        <ul>
-          <li class="catalog">Catalog</li>
-          <li class="salon">Salon addresses</li>
-          <li class="stock">Stock</li>
-          <li class="development">Developments</li>
-          <li class="about">About company</li>
-          <li class="guarantee">Guarantee</li>
-          <li class="delivery">Delivery</li>
-          <li class="jobs">Jobs</li>
-          <li class="credit">Goods on credit</li>
-        </ul>
-      </div>
-      <div class="box3"></div>
-      <div class="box4">4</div>
-      <div class="box5">5</div>
-      <div class="box6">6</div>
-      <div class="box7">7</div>
-    </div>
-    <script>
-      function switchStyle() {
-        let style = document.querySelector(".style");
-        if (style.getAttribute("href") == "grid4.css") {
-          style.setAttribute("href", "grid2.css");
-        } else {
-          style.setAttribute("href", "grid4.css");
-        }
-      }
-    </script>
-  </body>
-</html>
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://cdn.imgchest.com/files/pyvdcd2lnyk.png);
+  background-repeat: no-repeat;
+  max-width: 1500;
+  min-height: 1583px;
+  font-size: 2rem;
+  background-image: none;
+  opacity: 1;
+  color: rgb(0, 0, 225);
+}
+
+.container {
+  display: grid;
+  grid-template-rows:
+    minmax(112px, auto) minmax(66px, auto) minmax(49px, auto) minmax(
+      438px,
+      auto
+    )
+    minmax(154px, auto) minmax(1130px, auto);
+
+  grid-template-columns: minmax(1px, 212px) minmax(2px, 452px) minmax(
+      4px,
+      578px
+    );
+  grid-template-areas:
+    "one seven eight"
+    "two two two"
+    "three three three"
+    "four four four"
+    "five five five"
+    "six six six";
+}
+
+.container > * {
+  border: 2px dashed blue;
+}
+
+.box1 {
+  grid-area: one;
+}
+
+.box2 {
+  grid-area: two;
+}
+
+.box3 {
+  grid-area: three;
+}
+
+.box4 {
+  grid-area: four;
+}
+
+.box5 {
+  grid-area: five;
+}
+
+.box6 {
+  grid-area: six;
+}
+
+.box7 {
+  grid-area: seven;
+}
+
+.box8 {
+  grid-area: eight;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  color: hsl(0, 0%, 3%);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+ul li {
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.catalog {
+  color: #db1a1acf;
+  flex-basis: 104px;
+  padding-top: 4px;
+  padding-left: 18px;
+}
+
+.salon {
+  flex-basis: 165px;
+  padding-left: 12px;
+}
+
+.stock {
+  flex-basis: 83px;
+}
+
+.development {
+  flex-basis: 149px;
+}
+
+.about {
+  flex-basis: 159px;
+}
+
+.guarantee {
+  flex-basis: 119px;
+}
+
+.delivery {
+  flex-basis: 102px;
+}
+
+.jobs {
+  flex-basis: 75px;
+}
+
+.credit {
+  flex-basis: 140px;
+}
+
+img:nth-of-type(1) {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 100%;
+
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight";
+  }
+}
