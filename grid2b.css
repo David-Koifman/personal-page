@@ -108,6 +108,26 @@ body {
 
 .box6 {
   grid-area: six;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.box-a {
+  background-color: #ffdddd;
+}
+
+.box-b {
+  background-color: #ddffdd;
+}
+
+.box-c {
+  background-color: #ddddff;
+}
+
+.box-d {
+  background-color: #ffffdd;
 }
 
 .box7 {
