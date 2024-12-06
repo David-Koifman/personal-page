@@ -43,6 +43,10 @@ body {
 
 .box1 {
   grid-area: one;
+  background-image: url("https://www.myphone.kg/static/user/ima/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .box2 {
@@ -59,6 +63,45 @@ body {
 
 .box5 {
   grid-area: five;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.logo {
+  flex: 1;
+  max-width: 80px;
+  max-height: 50px;
+  aspect-ratio: 3 / 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.samsung {
+  background-image: url("https://www.myphone.kg/files/media/9/9208.png");
+}
+
+.apple {
+  background-image: url("https://www.myphone.kg/files/media/9/9197.png");
+}
+
+.xiaomi {
+  background-image: url("https://www.myphone.kg/files/media/9/9200.png");
+}
+
+.realme {
+  background-image: url("https://www.myphone.kg/files/media/9/9555.png");
+}
+
+.jbl {
+  background-image: url("https://www.myphone.kg/files/media/9/9198.png");
+}
+
+.tecno {
+  background-image: url("https://www.myphone.kg/files/media/9/9198.png");
 }
 
 .box6 {
