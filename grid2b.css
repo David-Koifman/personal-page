@@ -65,16 +65,15 @@ body {
   grid-area: five;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   background-color: #fff;
-  padding: 10px;
+  padding: 0;
 }
 
 .logo {
   flex: 1;
-  max-width: 80px;
-  max-height: 50px;
-  aspect-ratio: 3 / 2;
+  height: calc(100% - 2px);
+  max-width: 150px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -104,7 +103,7 @@ body {
 }
 
 .tecno {
-  background-image: url("https://www.myphone.kg/files/media/9/9198.png");
+  background-image: url("https://www.myphone.kg/files/media/21/21596.png");
 }
 
 .box6 {
