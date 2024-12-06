@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(https://cdn.imgchest.com/files/pyvdcd2lnyk.png);
+  /* background-image: url(https://cdn.imgchest.com/files/pyvdcd2lnyk.png); */
   background-repeat: no-repeat;
   max-width: 1500;
   min-height: 1583px;
@@ -44,9 +44,11 @@ body {
 .box1 {
   grid-area: one;
   background-image: url("https://www.myphone.kg/static/user/ima/logo.png");
-  background-size: cover;
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .box2 {
@@ -109,26 +111,36 @@ body {
 .box6 {
   grid-area: six;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   padding: 0;
 }
 
-.box-a {
+/* .box-a {
+  width: 150px;
+  height: 615px;
   background-color: #ffdddd;
+  border: 2px dashed blue;
 }
 
 .box-b {
+  width: 140px;
+  height: 90px;
   background-color: #ddffdd;
 }
 
 .box-c {
+  width: 130px;
+  height: 80px;
   background-color: #ddddff;
 }
 
 .box-d {
+  width: 120px;
+  height: 70px;
   background-color: #ffffdd;
-}
+} */
 
 .box7 {
   grid-area: seven;
