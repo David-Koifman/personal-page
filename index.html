@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+    <link rel="stylesheet" href="finalStyle.css" class="style" />
   </head>
   <body>
-    <div id="header">
-      <h1>David Koifman</h1>
-    </div>
-    <div id="title">
-      <h2>Welcome to David Koifman's personal webpage</h2>
-      <p>
-        "The most certain way to succeed is always to try just one more time."
-        —Thomas Edison
-      </p>
-    </div>
-    <div id="about">
-      <img src="https://i.imgur.com/mwbFOWQ.png" alt="David Koifman photo">
-      <div>
-        <h3>ABOUT</h3>
-        <p>20 year old Software Engineering student from Kyrgyzstan</p>
+    <button
+      onclick="switchStyle()"
+      style="position: absolute; top: 0; right: 0"
+    >
+      Style
+    </button>
+    <!-- <img
+      src="https://cdn.imgchest.com/files/k739c6d6q7q.png"
+      style="position: absolute; top: 0; left: 0; z-index: -1"
+    /> -->
+    <div class="container">
+      <div class="box1">1</div>
+      <div class="box2">
+        <ul>
+          <li class="catalog">Catalog</li>
+          <li class="salon">Salon addresses</li>
+          <li class="stock">Stock</li>
+          <li class="development">Developments</li>
+          <li class="about">About company</li>
+          <li class="guarantee">Guarantee</li>
+          <li class="delivery">Delivery</li>
+          <li class="jobs">Jobs</li>
+          <li class="credit">Goods on credit</li>
+        </ul>
       </div>
+      <div class="box3"></div>
+      <div class="box4">4</div>
+      <div class="box5">
+        <div class="logo samsung"></div>
+        <div class="logo apple"></div>
+        <div class="logo xiaomi"></div>
+        <div class="logo realme"></div>
+        <div class="logo jbl"></div>
+        <div class="logo tecno"></div>
+      </div>
+
+      <div class="box6">
+        <!-- <div class="box-a">A</div>
+        <div class="box-b">B</div>
+        <div class="box-c">C</div>
+        <div class="box-d">D</div> -->
+      </div>
+
+      <div class="box7">
+        <ul class="numbers-list">
+          <li>0312</li>
+          <li>0501</li>
+          <li>0770</li>
+          <li>0990</li>
+        </ul>
+      </div>
+
+      <div class="box8">8</div>
     </div>
-    <h3>Favorites</h3>
-    <div id="fav">
-      <ol>
-        <li>Steak</li>
-        <li>Plov</li>
-        <li>Pizza</li>
-      </ol>
-      <ol>
-        <li>Mother</li>
-        <li>Grandmother</li>
-        <li>Me</li>
-      </ol>
-      <ol>
-        <li>Schindler's List</li>
-        <li>The Shawshank Redemption</li>
-        <li>Lord of the Rings Trilogy</li>
-      </ol>
-    </div>
-    <div id="wish">
-      <h3>Wishes</h3>
-      <p>
-        I am planning to become a great software engineer and make significant
-        contributions to this field.
-      </p>
-    </div>
+    <script>
+      function switchStyle() {
+        let style = document.querySelector(".style");
+        if (style.getAttribute("href") == "finalStyle.css") {
+          style.setAttribute("href", "finalStyle.css");
+        } else {
+          style.setAttribute("href", "finalStyle.css");
+        }
+      }
+    </script>
   </body>
 </html>
