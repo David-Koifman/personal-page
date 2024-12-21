@@ -84,6 +84,66 @@ body {
   box-sizing: border-box;
 }
 
+.social-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 250px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  background: transparent;
+  flex-grow: 1;
+  padding-right: 40px;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .samsung {
   background-image: url("https://www.myphone.kg/files/media/9/9208.png");
 }
