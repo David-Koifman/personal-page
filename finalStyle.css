@@ -18,16 +18,18 @@ body {
 .container {
   display: grid;
   grid-template-rows:
-    minmax(112px, auto) minmax(66px, auto) minmax(49px, auto) minmax(
-      438px,
-      auto
-    )
-    minmax(154px, auto) minmax(1130px, auto);
+    minmax(112px, auto)
+    minmax(66px, auto)
+    minmax(49px, auto)
+    minmax(438px, auto)
+    minmax(154px, auto)
+    minmax(1130px, auto);
 
-  grid-template-columns: minmax(1px, 212px) minmax(2px, 452px) minmax(
-      4px,
-      578px
-    );
+  grid-template-columns:
+    minmax(1px, 212px)
+    minmax(2px, 300px)
+    minmax(4px, 730px);
+
   grid-template-areas:
     "one seven eight"
     "two two two"
@@ -197,8 +199,8 @@ body {
   margin-left: 20px;
   align-self: center;
 }
-
 .box7 {
+  grid-area: seven;
   display: flex;
   justify-content: flex-end;
   align-items: center;
