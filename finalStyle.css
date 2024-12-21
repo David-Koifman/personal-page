@@ -99,7 +99,10 @@ box2 ul {
 
 .box4 {
   grid-area: four;
-  background-color: #ccc;
+  background-image: url("https://www.myphone.kg/files/media/23/23592.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .box5 {
