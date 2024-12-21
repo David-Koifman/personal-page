@@ -117,31 +117,6 @@ body {
   padding: 0;
 }
 
-/* .box-a {
-  width: 150px;
-  height: 615px;
-  background-color: #ffdddd;
-  border: 2px dashed blue;
-}
-
-.box-b {
-  width: 140px;
-  height: 90px;
-  background-color: #ddffdd;
-}
-
-.box-c {
-  width: 130px;
-  height: 80px;
-  background-color: #ddddff;
-}
-
-.box-d {
-  width: 120px;
-  height: 70px;
-  background-color: #ffffdd;
-} */
-
 .numbers-list {
   list-style: none;
   margin: 0;
@@ -149,17 +124,25 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 1.2rem;
-  color: red;
+  font-size: 1.5rem;
+  color: #ba4b4b;
   font-family: "Montserrat", sans-serif;
   align-items: flex-end;
-  justify-content: flex-end;
+}
+
+.main-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ba4b4b;
+  margin-left: 20px;
+  align-self: center;
 }
 
 .box7 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 30px;
 }
 
 .box8 {
