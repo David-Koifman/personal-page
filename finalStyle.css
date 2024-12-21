@@ -94,10 +94,12 @@ box2 ul {
 
 .box3 {
   grid-area: three;
+  background-color: #ccc;
 }
 
 .box4 {
   grid-area: four;
+  background-color: #ccc;
 }
 
 .box5 {
@@ -105,7 +107,7 @@ box2 ul {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: #fff;
+  background-color: #ccc;
   padding: 0;
 }
 
