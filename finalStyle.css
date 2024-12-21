@@ -23,7 +23,7 @@ body {
     minmax(49px, auto)
     minmax(438px, auto)
     minmax(154px, auto)
-    minmax(1130px, auto);
+    minmax(50px, auto);
 
   grid-template-columns:
     minmax(1px, 212px)
@@ -118,7 +118,7 @@ box2 ul {
   flex: none;
   height: 110px;
   width: 200px;
-  margin: 0 2px;
+  margin: 0 1px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -223,11 +223,14 @@ box2 ul {
 
 .box6 {
   grid-area: six;
+  background-color: #b71c1c;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px;
 }
 
 .numbers-list {
