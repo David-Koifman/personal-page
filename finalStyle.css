@@ -55,6 +55,41 @@ body {
 
 .box2 {
   grid-area: two;
+  position: relative;
+  background-color: #ff2f5b;
+  overflow: hidden;
+}
+box2 ul {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 2;
+}
+
+.box2 ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 120px;
+  right: 0;
+  bottom: 0;
+  background-color: #1a1a1a;
+  z-index: 1;
+}
+
+.box2 li {
+  padding: 10px 15px;
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+
+.catalog {
+  color: white !important;
+  z-index: 3;
 }
 
 .box3 {
