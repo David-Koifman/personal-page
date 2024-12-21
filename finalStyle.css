@@ -23,7 +23,8 @@ body {
     minmax(49px, auto)
     minmax(438px, auto)
     minmax(154px, auto)
-    minmax(50px, auto);
+    minmax(50px, auto)
+    minmax(40px, auto);
 
   grid-template-columns:
     minmax(1px, 212px)
@@ -36,7 +37,8 @@ body {
     "three three three"
     "four four four"
     "five five five"
-    "six six six";
+    "six six six"
+    "ten ten ten";
 }
 
 .container > * {
@@ -266,6 +268,26 @@ box2 ul {
 .box8 {
   grid-area: eight;
   align-self: center;
+}
+
+.box10 {
+  grid-area: ten;
+  background-color: rgb(230, 22, 22);
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.credit-label {
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 ul {
