@@ -108,22 +108,24 @@ box2 ul {
 .box5 {
   grid-area: five;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10px;
   background-color: #ccc;
-  padding: 0;
 }
 
 .logo {
-  flex: 1;
-  height: calc(100% - 2px);
-  max-width: 150px;
+  flex: none;
+  height: 110px;
+  width: 200px;
+  margin: 0 2px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border: 2px solid blue;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 .social-search {
