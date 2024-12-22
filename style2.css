@@ -159,7 +159,6 @@ box2 ul {
   height: 30px;
 }
 
-/* Box 2 Responsiveness */
 @media (max-width: 500px) {
   .box2 {
     display: none;
@@ -182,14 +181,19 @@ box2 ul {
 
 .social-search {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
+  height: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .action-buttons {
   display: flex;
-  gap: 30px;
+  gap: 15px;
+  justify-content: center;
 }
 
 .action-buttons button:first-child {
@@ -198,7 +202,8 @@ box2 ul {
 
 .social-icons {
   display: flex;
-  gap: 30px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .icon {
@@ -209,14 +214,11 @@ box2 ul {
 }
 
 .search-container {
-  position: relative;
   display: flex;
   align-items: center;
-  padding: 5px 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  width: 250px;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
 }
 
 .search-input {
@@ -321,7 +323,13 @@ box2 ul {
 
 .box8 {
   grid-area: eight;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  height: auto;
+  background-color: #f9f9f9;
 }
 
 .box10 {
