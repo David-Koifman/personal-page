@@ -24,7 +24,8 @@ body {
     minmax(438px, auto)
     minmax(154px, auto)
     minmax(50px, auto)
-    minmax(40px, auto);
+    minmax(40px, auto)
+    minmax(300px, auto);
 
   grid-template-columns:
     minmax(1px, 212px)
@@ -38,7 +39,8 @@ body {
     "four four four"
     "five five five"
     "six six six"
-    "ten ten ten";
+    "ten ten ten"
+    "eleven eleven eleven";
 }
 
 .container > * {
@@ -288,6 +290,134 @@ box2 ul {
   padding: 5px 10px;
   font-size: 0.9rem;
   text-transform: uppercase;
+}
+
+.box11 {
+  grid-area: eleven;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 10px 20px;
+  background-color: #fff;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  width: 230px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-image {
+  background-color: #ccc;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-details {
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-desc {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: padding-box;
+  position: relative;
+  box-shadow: 0 0 0 4px #eee;
+}
+
+.color-circle.red-border {
+  box-shadow: 0 0 0 4px red;
+}
+
+.color-circle.red {
+  background-color: red;
+}
+
+.color-circle.black {
+  background-color: black;
+}
+
+.color-circle.blue {
+  background-color: blue;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price-value {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.info-icon {
+  display: inline-block;
+  background-color: #ddd;
+  color: #666;
+  font-size: 0.7rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+.cart-button {
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 ul {
