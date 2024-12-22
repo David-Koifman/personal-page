@@ -121,18 +121,19 @@ box2 ul {
 
 .box5 {
   grid-area: five;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
   align-items: center;
-  padding: 0 10px;
+  gap: 20px;
+  padding: 10px;
   background-color: #ccc;
 }
 
 .logo {
-  flex: none;
+  width: 150px;
   height: 110px;
-  width: 200px;
-  margin: 0 1px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -142,7 +143,6 @@ box2 ul {
   border-radius: 5px;
 }
 
-/* Hamburger Menu Styling */
 .buttonMenu {
   display: none;
   position: fixed;
