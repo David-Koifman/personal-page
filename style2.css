@@ -113,10 +113,29 @@ box2 ul {
 
 .box4 {
   grid-area: four;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.box4::before {
+  content: "";
+  width: 400px;
+  height: 400px;
   background-image: url("https://www.myphone.kg/files/media/23/23592.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 10px solid #ff2f5b;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box4:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .box5 {
