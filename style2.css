@@ -242,6 +242,14 @@ img {
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+  border: 3px solid #4caf50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .search-container {
@@ -252,9 +260,16 @@ img {
   width: 100%;
   max-width: 500px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #ff5722;
   border-radius: 25px;
-  background-color: #fff;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.search-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .search-input {
