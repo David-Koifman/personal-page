@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -357,6 +358,7 @@ box2 ul {
 }
 
 .numbers-list {
+  font-family: "Roboto", sans-serif;
   list-style: none;
   margin: 0;
   margin-left: 20px;
@@ -369,14 +371,47 @@ box2 ul {
   font-family: "Montserrat", sans-serif;
   align-items: center;
   text-align: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .main-number {
-  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: #ba4b4b;
-  align-self: center;
-  flex-shrink: 1;
+  color: #ff5722;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  animation: glow 2s infinite alternate, scaleUp 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #e64a19;
+  }
+  to {
+    text-shadow: 0 0 20px #e64a19, 0 0 30px #ff5722, 0 0 40px #ff5722;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
 
 .box8 {
