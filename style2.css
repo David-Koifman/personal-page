@@ -117,12 +117,14 @@ box2 ul {
   justify-content: center;
   align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 
 .box4::before {
   content: "";
-  width: 400px;
-  height: 400px;
+  width: 90%;
+  max-width: 400px;
+  aspect-ratio: 1;
   background-image: url("https://www.myphone.kg/files/media/23/23592.jpg");
   background-size: cover;
   background-position: center;
@@ -134,7 +136,7 @@ box2 ul {
 }
 
 .box4:hover::before {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -233,31 +235,32 @@ box2 ul {
 }
 
 .search-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 500px;
+  width: 100%; /* Ensure the container takes the full width */
+  max-width: 500px; /* Limit the width of the container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: #fff;
 }
 
 .search-input {
-  border: none;
-  outline: none;
+  flex-grow: 1;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   color: #333;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
   background: transparent;
-  flex-grow: 1;
-  padding-right: 40px;
-}
-
-.search-input::placeholder {
-  color: #aaa;
 }
 
 .search-button {
   position: absolute;
-  right: 5px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
@@ -269,7 +272,6 @@ box2 ul {
   width: 20px;
   height: 20px;
 }
-
 .samsung {
   background-image: url("https://www.myphone.kg/files/media/9/9208.png");
 }
