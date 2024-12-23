@@ -268,7 +268,6 @@ box2 ul {
   cursor: pointer;
 }
 
-
 .search-icon {
   width: 20px;
   height: 20px;
@@ -296,6 +295,40 @@ box2 ul {
 
 .tecno {
   background-image: url("https://www.myphone.kg/files/media/21/21596.png");
+}
+
+.logo.samsung:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo.apple:hover {
+  transform: rotate(360deg);
+  transition: transform 0.6s ease-in-out;
+}
+
+.logo.xiaomi:hover {
+  filter: brightness(1.5);
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo.realme:hover {
+  border: 3px solid #ffeb3b;
+  border-radius: 50%;
+  transition: border 0.3s ease, border-radius 0.3s ease;
+}
+
+.logo.jbl:hover {
+  background-color: #ff5722;
+  transform: scale(1.1) rotate(-10deg);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.logo.tecno:hover {
+  opacity: 0.8;
+  transform: translateY(-10px);
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 .box6 {
@@ -712,4 +745,3 @@ ul li {
       "eight";
   }
 }
-
