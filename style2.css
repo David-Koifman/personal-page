@@ -240,7 +240,7 @@ box2 ul {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 500px; 
+  max-width: 500px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 25px;
@@ -268,10 +268,12 @@ box2 ul {
   cursor: pointer;
 }
 
+
 .search-icon {
   width: 20px;
   height: 20px;
 }
+
 .samsung {
   background-image: url("https://www.myphone.kg/files/media/9/9208.png");
 }
@@ -710,3 +712,4 @@ ul li {
       "eight";
   }
 }
+
