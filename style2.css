@@ -74,7 +74,8 @@ img {
   background-color: #ff2f5b;
   overflow: hidden;
 }
-box2 ul {
+
+.box2 ul {
   position: relative;
   display: flex;
   margin: 0;
@@ -100,6 +101,14 @@ box2 ul {
   color: white;
   position: relative;
   z-index: 3;
+  transition: all 0.3s ease-in-out;
+}
+
+.box2 li:hover {
+  color: #ffeb3b;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ff5722;
+  cursor: pointer;
 }
 
 .catalog {
