@@ -239,8 +239,8 @@ box2 ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Ensure the container takes the full width */
-  max-width: 500px; /* Limit the width of the container */
+  width: 100%;
+  max-width: 500px; 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 25px;
