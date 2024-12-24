@@ -730,4 +730,8 @@ ul li {
       "twelve"
       "thirteen";
   }
+
+  .box2 {
+    display: none;
+  }
 }
