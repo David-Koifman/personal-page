@@ -597,8 +597,6 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* box 12 */
-
 .box13 {
   grid-area: thirteen;
   display: flex;
@@ -801,6 +799,11 @@ ul li {
       "five"
       "six"
       "seven"
-      "eight";
+      "eight"
+      "nine"
+      "ten"
+      "eleven"
+      "twelve"
+      "thirteen";
   }
 }
